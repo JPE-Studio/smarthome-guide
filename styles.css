@@ -784,10 +784,11 @@ body {
 
 .table-row {
     display: grid;
-    grid-template-columns: 2fr 1fr 1.2fr 1.5fr 80px;
+    grid-template-columns: 2fr 1fr 1.2fr 1.5fr 80px auto;
     padding: 20px 24px;
     align-items: center;
     border-bottom: 1px solid var(--border);
+    gap: 16px;
 }
 
 .table-row:last-child {
@@ -801,6 +802,23 @@ body {
     color: var(--text-muted);
     text-transform: uppercase;
     letter-spacing: 0.05em;
+}
+
+.table-buy-btn {
+    padding: 8px 16px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: white;
+    text-decoration: none;
+    border-radius: var(--radius-sm);
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: all var(--transition-fast);
+    white-space: nowrap;
+}
+
+.table-buy-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
 }
 
 .table-row.winner-row {
@@ -1263,7 +1281,7 @@ body {
     }
     
     .table-row {
-        grid-template-columns: 2fr 1fr 1fr 80px;
+        grid-template-columns: 2fr 1fr 80px auto;
     }
     
     .table-row > div:nth-child(4) {
@@ -1353,4 +1371,36 @@ body {
     background: var(--bg-tertiary);
     border-radius: var(--radius);
     padding: 24px;
+}
+
+/* Affiliate Buttons */
+.affiliate-btn {
+    margin-top: 20px;
+    display: inline-flex;
+}
+
+.affiliate-note {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 12px;
+}
+
+.lighting-card {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-link {
+    margin-top: auto;
+    padding-top: 16px;
+    color: var(--primary-light);
+    font-weight: 600;
+    font-size: 0.875rem;
+    transition: all var(--transition-fast);
+}
+
+.lighting-card:hover .card-link {
+    color: var(--primary);
 }/* Build: Sa 31. Jan 15:59:02 CET 2026 */
