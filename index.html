@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Der ultimative Smart Home Guide 2025. Vergleiche, Tests und Empfehlungen für Alexa, Google Home, Philips Hue und mehr.">
+    <meta name="keywords" content="Smart Home, Alexa, Google Home, Philips Hue, smarte Steckdosen, Smart Speaker">
+    <title>Smart Home Guide 2025 | Die besten Geräte im Test</title>
+    <link rel="canonical" href="https://deinsite.github.io/smarthome-guide/">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Smart Home Guide 2025 | Die besten Geräte">
+    <meta property="og:description" content="Vergleiche und Tests aller Smart Home Systeme. Finde die perfekten Geräte für dein Zuhause.">
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">🏠 SmartHome Guide</a>
+            <button class="nav-toggle" aria-label="Menü öffnen">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#systeme">Systeme</a></li>
+                <li><a href="#beleuchtung">Beleuchtung</a></li>
+                <li><a href="#sicherheit">Sicherheit</a></li>
+                <li><a href="#steuerung">Steuerung</a></li>
+                <li><a href="#ratgeber">Ratgeber</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Das perfekte Smart Home aufbauen</h1>
+            <p class="hero-subtitle">Vergleiche, Tests und Empfehlungen für 2025. Finde die besten Geräte für Alexa, Google Home und Apple HomeKit – unabhängig und aktuell.</p>
+            <div class="hero-search">
+                <input type="text" id="searchInput" placeholder="z.B. 'Alexa Echo' oder 'Philips Hue'...">
+                <button onclick="searchProducts()">Suchen</button>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">Getestete Geräte</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">12</span>
+                <span class="stat-label">Smart Home Systeme</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">2025</span>
+                <span class="stat-label">Aktuelle Tests</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Top Kategorien -->
+        <section id="kategorien" class="section">
+            <div class="container">
+                <h2 class="section-title">Beliebte Kategorien</h2>
+                <div class="category-grid">
+                    <a href="#systeme" class="category-card">
+                        <div class="category-icon">🔊</div>
+                        <h3>Smart Speaker</h3>
+                        <p>Alexa, Google Home & Co. im Vergleich</p>
+                    </a>
+                    <a href="#beleuchtung" class="category-card">
+                        <div class="category-icon">💡</div>
+                        <h3>Smarte Beleuchtung</h3>
+                        <p>Philips Hue, Nanoleaf & Alternativen</p>
+                    </a>
+                    <a href="#steuerung" class="category-card">
+                        <div class="category-icon">🔌</div>
+                        <h3>Smarte Steckdosen</h3>
+                        <p>Strom sparen und Geräte automatisieren</p>
+                    </a>
+                    <a href="#sicherheit" class="category-card">
+                        <div class="category-icon">🔒</div>
+                        <h3>Sicherheit</h3>
+                        <p>Kameras, Türschlösser & Alarmanlagen</p>
+                    </a>
+                    <a href="#heizung" class="category-card">
+                        <div class="category-icon">🌡️</div>
+                        <h3>Smarte Heizung</h3>
+                        <p>Thermostate für effizientes Heizen</p>
+                    </a>
+                    <a href="#haushalt" class="category-card">
+                        <div class="category-icon">🤖</div>
+                        <h3>Haushaltsroboter</h3>
+                        <p>Saug- und Wischroboter im Test</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Smart Speaker Vergleich -->
+        <section id="systeme" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Smart Speaker & Sprachassistenten</h2>
+                <p class="section-subtitle">Der Einstieg ins Smart Home – welcher Assistent passt zu dir?</p>
+                
+                <div class="comparison-table-wrapper">
+                    <table class="comparison-table">
+                        <thead>
+                            <tr>
+                                <th>Gerät</th>
+                                <th>Preis</th>
+                                <th>Klang</th>
+                                <th>Smart Home</th>
+                                <th>Beste für</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="winner">
+                                <td>
+                                    <strong>Amazon Echo Studio</strong>
+                                    <span class="badge">Testsieger</span>
+                                </td>
+                                <td>~199€</td>
+                                <td>⭐⭐⭐⭐⭐</td>
+                                <td>Alexa, Zigbee</td>
+                                <td>Beste Klangqualität</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Google Nest Audio</strong></td>
+                                <td>~99€</td>
+                                <td>⭐⭐⭐⭐</td>
+                                <td>Google Home</td>
+                                <td>Google-Integration</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Apple HomePod mini</strong></td>
+                                <td>~109€</td>
+                                <td>⭐⭐⭐⭐</td>
+                                <td>HomeKit</td>
+                                <td>Apple-Ökosystem</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Echo Dot (5. Gen)</strong></td>
+                                <td>~64€</td>
+                                <td>⭐⭐⭐</td>
+                                <td>Alexa</td>
+                                <td>Günstiger Einstieg</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- AI Product Recommendations Widget -->
+                <div class="widget-section">
+                    <h3>🛒 Empfohlene Smart Speaker</h3>
+                    <p class="widget-hint">Basierend auf unseren Tests – die besten aktuellen Angebote:</p>
+                    <div class="amazon-widget-container" data-tag="smarthomeguide0c-21"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Smarte Beleuchtung -->
+        <section id="beleuchtung" class="section">
+            <div class="container">
+                <h2 class="section-title">Smarte Beleuchtung</h2>
+                <p class="section-subtitle">Ambiente per Sprache oder App steuern</p>
+                
+                <div class="product-grid">
+                    <article class="product-card featured">
+                        <div class="product-badge">Bestseller</div>
+                        <h3>Philips Hue White & Color</h3>
+                        <p>Der Goldstandard für smarte Beleuchtung. 16 Millionen Farben, nahtlose Integration mit allen Systemen.</p>
+                        <ul class="feature-list">
+                            <li>✓ 16 Mio. Farben</li>
+                            <li>✓ Matter-kompatibel</li>
+                            <li>✓ Musik-Sync</li>
+                            <li>✓ Hohe Qualität</li>
+                        </ul>
+                        <div class="product-price">Starter-Set ab ~199€</div>
+                    </article>
+                    
+                    <article class="product-card">
+                        <h3>Nanoleaf Shapes</h3>
+                        <p>Modulare Lichtpaneele für kreative Wandgestaltung. Perfekt für Gaming-Setups und Wohnzimmer.</p>
+                        <ul class="feature-list">
+                            <li>✓ Modular erweiterbar</li>
+                            <li>✓ Screen Mirror</li>
+                            <li>✓ Touch-Steuerung</li>
+                            <li>✓ Rhythm-Musikmodus</li>
+                        </ul>
+                        <div class="product-price">Starter-Set ab ~229€</div>
+                    </article>
+                    
+                    <article class="product-card value">
+                        <div class="product-badge">Preis-Tipp</div>
+                        <h3>TP-Link Tapo L530E</h3>
+                        <p>Günstige Alternative mit guter Farbwiedergabe. Ideal für den Einstieg ohne Hub.</p>
+                        <ul class="feature-list">
+                            <li>✓ Kein Hub nötig</li>
+                            <li>✓ WLAN direkt</li>
+                            <li>✓ App-Steuerung</li>
+                            <li>✓ Sehr günstig</li>
+                        </ul>
+                        <div class="product-price">~12€ pro Lampe</div>
+                    </article>
+                </div>
+
+                <div class="widget-section">
+                    <h3>🛒 Smarte Lampen & Beleuchtung</h3>
+                    <div class="amazon-widget-container" data-tag="smarthomeguide0c-21"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kaufberater -->
+        <section id="ratgeber" class="section section-alt">
+            <div class="container">
+                <h2 class="section-title">Smart Home Ratgeber</h2>
+                
+                <div class="guide-grid">
+                    <article class="guide-card">
+                        <span class="guide-number">01</span>
+                        <h3>Der richtige Einstieg</h3>
+                        <p>Starte mit einem Smart Speaker. Amazon Echo oder Google Nest sind die beliebtesten Einstiegspunkte. Beide unterstützen Tausende Geräte.</p>
+                        <a href="#systeme" class="guide-link">Vergleich ansehen →</a>
+                    </article>
+                    
+                    <article class="guide-card">
+                        <span class="guide-number">02</span>
+                        <h3>System wählen</h3>
+                        <p>Entscheide dich für ein Ökosystem: Alexa (größte Auswahl), Google Home (beste KI), oder HomeKit (beste Privatsphäre).</p>
+                    </article>
+                    
+                    <article class="guide-card">
+                        <span class="guide-number">03</span>
+                        <h3>Erste Automation</h3>
+                        <p>Baue nach und nach aus: Smarte Steckdosen für Lampen, dann Thermostate, schließlich Kameras und Sensoren.</p>
+                    </article>
+                    
+                    <article class="guide-card">
+                        <span class="guide-number">04</span>
+                        <h3>Energie sparen</h3>
+                        <p>Smarte Thermostate und Steckdosen können bis zu 30% Heizkosten sparen. Die Investition amortisiert sich schnell.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="section newsletter">
+            <div class="container">
+                <div class="newsletter-content">
+                    <h2>Immer auf dem neuesten Stand</h2>
+                    <p>Neue Tests, Angebote und Tipps direkt in dein Postfach. Kein Spam, jederzeit kündbar.</p>
+                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Danke! (Demo-Formular)');">
+                        <input type="email" placeholder="Deine E-Mail-Adresse" required>
+                        <button type="submit">Anmelden</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>🏠 SmartHome Guide</h3>
+                    <p>Unabhängige Tests und Empfehlungen für dein Smart Home. Aktualisiert 2025.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Kategorien</h4>
+                    <ul>
+                        <li><a href="#systeme">Smart Speaker</a></li>
+                        <li><a href="#beleuchtung">Beleuchtung</a></li>
+                        <li><a href="#sicherheit">Sicherheit</a></li>
+                        <li><a href="#steuerung">Steuerung</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Rechtliches</h4>
+                    <ul>
+                        <li><a href="#impressum">Impressum</a></li>
+                        <li><a href="#datenschutz">Datenschutz</a></li>
+                        <li><a href="#affiliate">Affiliate-Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 SmartHome Guide. Diese Seite enthält Affiliate-Links. <a href="#affiliate">Mehr erfahren</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Affiliatematic Script -->
+    <script src="https://affiliatematic.com/amazon-widget.iife.js" async></script>
+    <script src="script.js"></script>
+</body>
+</html>
