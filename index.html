@@ -3,294 +3,443 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Der ultimative Smart Home Guide 2025. Vergleiche, Tests und Empfehlungen für Alexa, Google Home, Philips Hue und mehr.">
-    <meta name="keywords" content="Smart Home, Alexa, Google Home, Philips Hue, smarte Steckdosen, Smart Speaker">
-    <title>Smart Home Guide 2025 | Die besten Geräte im Test</title>
-    <link rel="canonical" href="https://deinsite.github.io/smarthome-guide/">
+    <meta name="description" content="Der ultimative Smart Home Guide 2025. Premium Vergleiche, Tests und Empfehlungen für Alexa, Google Home, Philips Hue.">
+    <title>Smart Home Guide 2025 | Die besten Geräte im Premium-Test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <!-- Open Graph -->
-    <meta property="og:title" content="Smart Home Guide 2025 | Die besten Geräte">
-    <meta property="og:description" content="Vergleiche und Tests aller Smart Home Systeme. Finde die perfekten Geräte für dein Zuhause.">
-    <meta property="og:type" content="website">
 </head>
 <body>
-    <nav class="navbar">
+    <!-- Animated Background -->
+    <div class="ambient-light"></div>
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="gradient-orb orb-3"></div>
+
+    <!-- Navigation -->
+    <nav class="nav-glass">
         <div class="nav-container">
-            <a href="/" class="nav-logo">🏠 SmartHome Guide</a>
-            <button class="nav-toggle" aria-label="Menü öffnen">
-                <span></span><span></span><span></span>
-            </button>
-            <ul class="nav-menu">
-                <li><a href="#systeme">Systeme</a></li>
-                <li><a href="#beleuchtung">Beleuchtung</a></li>
-                <li><a href="#sicherheit">Sicherheit</a></li>
-                <li><a href="#steuerung">Steuerung</a></li>
-                <li><a href="#ratgeber">Ratgeber</a></li>
-            </ul>
+            <a href="/" class="logo">
+                <span class="logo-icon">◉</span>
+                <span class="logo-text">SmartHome<span class="logo-accent">Guide</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="#vergleiche" class="nav-link">Vergleiche</a>
+                <a href="#kategorien" class="nav-link">Kategorien</a>
+                <a href="#empfehlungen" class="nav-link">Empfehlungen</a>
+                <a href="#guide" class="nav-link">Guide</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Dark Mode">
+                    <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="5"/>
+                        <path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                    </svg>
+                    <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
+                <button class="menu-toggle" aria-label="Menü">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="hero-content">
-            <h1 class="hero-title">Das perfekte Smart Home aufbauen</h1>
-            <p class="hero-subtitle">Vergleiche, Tests und Empfehlungen für 2025. Finde die besten Geräte für Alexa, Google Home und Apple HomeKit – unabhängig und aktuell.</p>
-            <div class="hero-search">
-                <input type="text" id="searchInput" placeholder="z.B. 'Alexa Echo' oder 'Philips Hue'...">
-                <button onclick="searchProducts()">Suchen</button>
+    <!-- Hero Section -->
+    <header class="hero-premium">
+        <div class="hero-badge">
+            <span class="badge-pulse"></span>
+            <span>2025 Edition</span>
+        </div>
+        <h1 class="hero-title">
+            <span class="title-line">Entdecke die</span>
+            <span class="title-line gradient-text">Zukunft deines Zuhauses</span>
+        </h1>
+        <p class="hero-subtitle">
+            Unabhängige Tests und Premium-Empfehlungen für Smart Home Geräte. 
+            Von Experten geprüft. Für dein perfektes Zuhause.
+        </p>
+        <div class="hero-stats-premium">
+            <div class="stat-item">
+                <div class="stat-value" data-count="127">0</div>
+                <div class="stat-label">Getestete Geräte</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <div class="stat-value" data-count="15">0</div>
+                <div class="stat-label">Smart Systeme</div>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <div class="stat-value" data-count="50000">0</div>
+                <div class="stat-label">Monatliche Leser</div>
             </div>
         </div>
-        <div class="hero-stats">
-            <div class="stat">
-                <span class="stat-number">50+</span>
-                <span class="stat-label">Getestete Geräte</span>
+        <div class="hero-cta-group">
+            <a href="#vergleiche" class="btn-primary">
+                <span>Vergleiche starten</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+            <a href="#kategorien" class="btn-secondary">Kategorien entdecken</a>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
             </div>
-            <div class="stat">
-                <span class="stat-number">12</span>
-                <span class="stat-label">Smart Home Systeme</span>
-            </div>
-            <div class="stat">
-                <span class="stat-number">2025</span>
-                <span class="stat-label">Aktuelle Tests</span>
-            </div>
+            <span>Scrollen</span>
         </div>
     </header>
 
-    <main>
-        <!-- Top Kategorien -->
-        <section id="kategorien" class="section">
-            <div class="container">
-                <h2 class="section-title">Beliebte Kategorien</h2>
-                <div class="category-grid">
-                    <a href="#systeme" class="category-card">
-                        <div class="category-icon">🔊</div>
-                        <h3>Smart Speaker</h3>
-                        <p>Alexa, Google Home & Co. im Vergleich</p>
-                    </a>
-                    <a href="#beleuchtung" class="category-card">
-                        <div class="category-icon">💡</div>
-                        <h3>Smarte Beleuchtung</h3>
-                        <p>Philips Hue, Nanoleaf & Alternativen</p>
-                    </a>
-                    <a href="#steuerung" class="category-card">
-                        <div class="category-icon">🔌</div>
-                        <h3>Smarte Steckdosen</h3>
-                        <p>Strom sparen und Geräte automatisieren</p>
-                    </a>
-                    <a href="#sicherheit" class="category-card">
-                        <div class="category-icon">🔒</div>
-                        <h3>Sicherheit</h3>
-                        <p>Kameras, Türschlösser & Alarmanlagen</p>
-                    </a>
-                    <a href="#heizung" class="category-card">
-                        <div class="category-icon">🌡️</div>
-                        <h3>Smarte Heizung</h3>
-                        <p>Thermostate für effizientes Heizen</p>
-                    </a>
-                    <a href="#haushalt" class="category-card">
-                        <div class="category-icon">🤖</div>
-                        <h3>Haushaltsroboter</h3>
-                        <p>Saug- und Wischroboter im Test</p>
-                    </a>
+    <!-- Featured Categories -->
+    <section id="kategorien" class="section-premium">
+        <div class="section-header">
+            <span class="section-tag">Kategorien</span>
+            <h2 class="section-title-premium">Wähle dein Smart Home Bereich</h2>
+            <p class="section-subtitle">Von Beleuchtung bis Sicherheit – finde die beste Technologie</p>
+        </div>
+        
+        <div class="category-showcase">
+            <a href="#speaker" class="category-card-premium large">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2a3 3 0 0 0-3 3v14a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/>
+                            <path d="M19 10v4M22 8v8"/>
+                            <path d="M2 10v4M5 8v8"/>
+                        </svg>
+                    </div>
+                    <h3>Smart Speaker</h3>
+                    <p>Alexa, Google Home, Apple HomePod im direkten Vergleich</p>
+                    <span class="card-arrow">→</span>
+                </div>
+                <div class="card-bg" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+            </a>
+            
+            <a href="#beleuchtung" class="category-card-premium">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M9 18h6M10 22h4M12 2v1M12 2a6 6 0 0 0-6 6c0 2.22 1.21 4.16 3 5.2V18h6v-4.8c1.79-1.04 3-2.98 3-5.2a6 6 0 0 0-6-6Z"/>
+                        </svg>
+                    </div>
+                    <h3>Beleuchtung</h3>
+                    <p>Philips Hue & Alternativen</p>
+                </div>
+                <div class="card-bg" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+            </a>
+            
+            <a href="#sicherheit" class="category-card-premium">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                        </svg>
+                    </div>
+                    <h3>Sicherheit</h3>
+                    <p>Kameras & Alarmanlagen</p>
+                </div>
+                <div class="card-bg" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+            </a>
+            
+            <a href="#heizung" class="category-card-premium">
+                <div class="card-glow"></div>
+                <div class="card-content">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z"/>
+                        </svg>
+                    </div>
+                    <h3>Heizung</h3>
+                    <p>Smarte Thermostate</p>
+                </div>
+                <div class="card-bg" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);"></div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Product Comparison -->
+    <section id="vergleiche" class="section-premium section-dark">
+        <div class="section-header">
+            <span class="section-tag">Top Vergleiche</span>
+            <h2 class="section-title-premium">Smart Speaker im Test</h2>
+            <p class="section-subtitle">Der wichtigste Einstieg in dein Smart Home</p>
+        </div>
+
+        <div class="comparison-premium">
+            <div class="product-winner">
+                <div class="winner-badge">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                    </svg>
+                    <span>Testsieger 2025</span>
+                </div>
+                <div class="winner-content">
+                    <div class="winner-image">
+                        <div class="device-mockup">
+                            <div class="device-screen">
+                                <div class="device-wave"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="winner-info">
+                        <h3>Amazon Echo Studio</h3>
+                        <p class="winner-desc">Der beste Smart Speaker für Audiophile. Mit 3D-Audio und automatischer Raumoptimierung.</p>
+                        <div class="winner-specs">
+                            <div class="spec"><span class="spec-label">Klang</span><div class="spec-bar"><div class="spec-fill" style="width: 95%"></div></div></div>
+                            <div class="spec"><span class="spec-label">Smart Home</span><div class="spec-bar"><div class="spec-fill" style="width: 90%"></div></div></div>
+                            <div class="spec"><span class="spec-label">Preis/Leistung</span><div class="spec-bar"><div class="spec-fill" style="width: 85%"></div></div></div>
+                        </div>
+                        <div class="winner-price">ca. 199€</div>
+                    </div>
                 </div>
             </div>
-        </section>
 
-        <!-- Smart Speaker Vergleich -->
-        <section id="systeme" class="section section-alt">
-            <div class="container">
-                <h2 class="section-title">Smart Speaker & Sprachassistenten</h2>
-                <p class="section-subtitle">Der Einstieg ins Smart Home – welcher Assistent passt zu dir?</p>
-                
-                <div class="comparison-table-wrapper">
-                    <table class="comparison-table">
-                        <thead>
-                            <tr>
-                                <th>Gerät</th>
-                                <th>Preis</th>
-                                <th>Klang</th>
-                                <th>Smart Home</th>
-                                <th>Beste für</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr class="winner">
-                                <td>
-                                    <strong>Amazon Echo Studio</strong>
-                                    <span class="badge">Testsieger</span>
-                                </td>
-                                <td>~199€</td>
-                                <td>⭐⭐⭐⭐⭐</td>
-                                <td>Alexa, Zigbee</td>
-                                <td>Beste Klangqualität</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Google Nest Audio</strong></td>
-                                <td>~99€</td>
-                                <td>⭐⭐⭐⭐</td>
-                                <td>Google Home</td>
-                                <td>Google-Integration</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Apple HomePod mini</strong></td>
-                                <td>~109€</td>
-                                <td>⭐⭐⭐⭐</td>
-                                <td>HomeKit</td>
-                                <td>Apple-Ökosystem</td>
-                            </tr>
-                            <tr>
-                                <td><strong>Echo Dot (5. Gen)</strong></td>
-                                <td>~64€</td>
-                                <td>⭐⭐⭐</td>
-                                <td>Alexa</td>
-                                <td>Günstiger Einstieg</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <div class="comparison-table-premium">
+                <div class="table-row header">
+                    <div>Gerät</div>
+                    <div>Preis</div>
+                    <div>Klang</div>
+                    <div>Smart Home</div>
+                    <div>Bewertung</div>
                 </div>
-
-                <!-- AI Product Recommendations Widget -->
-                <div class="widget-section">
-                    <h3>🛒 Empfohlene Smart Speaker</h3>
-                    <p class="widget-hint">Basierend auf unseren Tests – die besten aktuellen Angebote:</p>
-                    <div class="amazon-widget-container" data-tag="jpe-allgemein-21"></div>
+                <div class="table-row winner-row">
+                    <div class="product-name">
+                        <span class="rank">1</span>
+                        Echo Studio
+                    </div>
+                    <div>199€</div>
+                    <div class="rating-stars">★★★★★</div>
+                    <div>Alexa, Zigbee</div>
+                    <div class="rating-badge">9.4</div>
+                </div>
+                <div class="table-row">
+                    <div class="product-name">
+                        <span class="rank">2</span>
+                        Google Nest Audio
+                    </div>
+                    <div>99€</div>
+                    <div class="rating-stars">★★★★☆</div>
+                    <div>Google Home</div>
+                    <div class="rating-badge">8.7</div>
+                </div>
+                <div class="table-row">
+                    <div class="product-name">
+                        <span class="rank">3</span>
+                        Apple HomePod mini
+                    </div>
+                    <div>109€</div>
+                    <div class="rating-stars">★★★★☆</div>
+                    <div>HomeKit</div>
+                    <div class="rating-badge">8.5</div>
+                </div>
+                <div class="table-row">
+                    <div class="product-name">
+                        <span class="rank">4</span>
+                        Echo Dot (5. Gen)
+                    </div>
+                    <div>64€</div>
+                    <div class="rating-stars">★★★☆☆</div>
+                    <div>Alexa</div>
+                    <div class="rating-badge">7.8</div>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <!-- Smarte Beleuchtung -->
-        <section id="beleuchtung" class="section">
-            <div class="container">
-                <h2 class="section-title">Smarte Beleuchtung</h2>
-                <p class="section-subtitle">Ambiente per Sprache oder App steuern</p>
-                
-                <div class="product-grid">
-                    <article class="product-card featured">
-                        <div class="product-badge">Bestseller</div>
-                        <h3>Philips Hue White & Color</h3>
-                        <p>Der Goldstandard für smarte Beleuchtung. 16 Millionen Farben, nahtlose Integration mit allen Systemen.</p>
-                        <ul class="feature-list">
-                            <li>✓ 16 Mio. Farben</li>
-                            <li>✓ Matter-kompatibel</li>
-                            <li>✓ Musik-Sync</li>
-                            <li>✓ Hohe Qualität</li>
-                        </ul>
-                        <div class="product-price">Starter-Set ab ~199€</div>
-                    </article>
-                    
-                    <article class="product-card">
-                        <h3>Nanoleaf Shapes</h3>
-                        <p>Modulare Lichtpaneele für kreative Wandgestaltung. Perfekt für Gaming-Setups und Wohnzimmer.</p>
-                        <ul class="feature-list">
-                            <li>✓ Modular erweiterbar</li>
-                            <li>✓ Screen Mirror</li>
-                            <li>✓ Touch-Steuerung</li>
-                            <li>✓ Rhythm-Musikmodus</li>
-                        </ul>
-                        <div class="product-price">Starter-Set ab ~229€</div>
-                    </article>
-                    
-                    <article class="product-card value">
-                        <div class="product-badge">Preis-Tipp</div>
-                        <h3>TP-Link Tapo L530E</h3>
-                        <p>Günstige Alternative mit guter Farbwiedergabe. Ideal für den Einstieg ohne Hub.</p>
-                        <ul class="feature-list">
-                            <li>✓ Kein Hub nötig</li>
-                            <li>✓ WLAN direkt</li>
-                            <li>✓ App-Steuerung</li>
-                            <li>✓ Sehr günstig</li>
-                        </ul>
-                        <div class="product-price">~12€ pro Lampe</div>
-                    </article>
+        <!-- AI Product Widget -->
+        <div id="empfehlungen" class="widget-section-premium">
+            <div class="widget-header">
+                <div class="widget-icon">✦</div>
+                <h3>KI-Empfohlene Produkte</h3>
+                <p>Basierend auf deinem aktuellen Interesse</p>
+            </div>
+            <div class="amazon-widget-container" data-tag="jpe-allgemein-21"></div>
+        </div>
+    </section>
+
+    <!-- Smart Lighting Section -->
+    <section id="beleuchtung" class="section-premium">
+        <div class="section-header">
+            <span class="section-tag">Beleuchtung</span>
+            <h2 class="section-title-premium">Smarte Lichtwelten</h2>
+        </div>
+
+        <div class="lighting-showcase">
+            <div class="lighting-hero">
+                <div class="lighting-visual">
+                    <div class="bulb-animation">
+                        <div class="bulb-glow"></div>
+                        <div class="bulb-core"></div>
+                    </div>
+                    <div class="color-dots">
+                        <span class="dot" style="background: #ff6b6b;"></span>
+                        <span class="dot" style="background: #4ecdc4;"></span>
+                        <span class="dot" style="background: #ffe66d;"></span>
+                        <span class="dot" style="background: #a8e6cf;"></span>
+                        <span class="dot" style="background: #ff8b94;"></span>
+                    </div>
                 </div>
-
-                <div class="widget-section">
-                    <h3>🛒 Smarte Lampen & Beleuchtung</h3>
-                    <div class="amazon-widget-container" data-tag="jpe-allgemein-21"></div>
+                <div class="lighting-content">
+                    <h3>Philips Hue White & Color</h3>
+                    <p class="lighting-desc">Der Goldstandard. 16 Millionen Farben, nahtlose Musik-Synchronisation und Matter-Kompatibilität.</p>
+                    <div class="lighting-features">
+                        <div class="feature-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            <span>16 Millionen Farben</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            <span>Matter kompatibel</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M20 6L9 17l-5-5"/>
+                            </svg>
+                            <span>Musik-Sync</span>
+                        </div>
+                    </div>
+                    <div class="pricing-tag">
+                        <span class="price-label">Starter-Set ab</span>
+                        <span class="price-value">199€</span>
+                    </div>
                 </div>
             </div>
-        </section>
 
-        <!-- Kaufberater -->
-        <section id="ratgeber" class="section section-alt">
-            <div class="container">
-                <h2 class="section-title">Smart Home Ratgeber</h2>
-                
-                <div class="guide-grid">
-                    <article class="guide-card">
-                        <span class="guide-number">01</span>
-                        <h3>Der richtige Einstieg</h3>
-                        <p>Starte mit einem Smart Speaker. Amazon Echo oder Google Nest sind die beliebtesten Einstiegspunkte. Beide unterstützen Tausende Geräte.</p>
-                        <a href="#systeme" class="guide-link">Vergleich ansehen →</a>
-                    </article>
-                    
-                    <article class="guide-card">
-                        <span class="guide-number">02</span>
-                        <h3>System wählen</h3>
-                        <p>Entscheide dich für ein Ökosystem: Alexa (größte Auswahl), Google Home (beste KI), oder HomeKit (beste Privatsphäre).</p>
-                    </article>
-                    
-                    <article class="guide-card">
-                        <span class="guide-number">03</span>
-                        <h3>Erste Automation</h3>
-                        <p>Baue nach und nach aus: Smarte Steckdosen für Lampen, dann Thermostate, schließlich Kameras und Sensoren.</p>
-                    </article>
-                    
-                    <article class="guide-card">
-                        <span class="guide-number">04</span>
-                        <h3>Energie sparen</h3>
-                        <p>Smarte Thermostate und Steckdosen können bis zu 30% Heizkosten sparen. Die Investition amortisiert sich schnell.</p>
-                    </article>
+            <div class="lighting-grid">
+                <div class="lighting-card">
+                    <div class="lighting-card-icon">◈</div>
+                    <h4>Nanoleaf Shapes</h4>
+                    <p>Modulare Lichtpaneele für kreative Wandgestaltung</p>
+                    <span class="lighting-price">ab 229€</span>
+                </div>
+                <div class="lighting-card value">
+                    <div class="value-badge">Best Value</div>
+                    <div class="lighting-card-icon">○</div>
+                    <h4>TP-Link Tapo</h4>
+                    <p>Günstige Alternative ohne Hub – direkt per WLAN</p>
+                    <span class="lighting-price">ab 12€</span>
+                </div>
+                <div class="lighting-card">
+                    <div class="lighting-card-icon">◇</div>
+                    <h4>Govee Glide</h4>
+                    <p>Gaming-Beleuchtung mit Screen-Mirror Funktion</p>
+                    <span class="lighting-price">ab 89€</span>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Newsletter -->
-        <section class="section newsletter">
-            <div class="container">
-                <div class="newsletter-content">
-                    <h2>Immer auf dem neuesten Stand</h2>
-                    <p>Neue Tests, Angebote und Tipps direkt in dein Postfach. Kein Spam, jederzeit kündbar.</p>
-                    <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Danke! (Demo-Formular)');">
-                        <input type="email" placeholder="Deine E-Mail-Adresse" required>
-                        <button type="submit">Anmelden</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
+    <!-- Quick Start Guide -->
+    <section id="guide" class="section-premium section-dark">
+        <div class="section-header">
+            <span class="section-tag">Quick Start</span>
+            <h2 class="section-title-premium">Dein Smart Home in 4 Schritten</h2>
+        </div>
 
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <h3>🏠 SmartHome Guide</h3>
-                    <p>Unabhängige Tests und Empfehlungen für dein Smart Home. Aktualisiert 2025.</p>
+        <div class="steps-timeline">
+            <div class="step-item">
+                <div class="step-number">
+                    <span>01</span>
+                    <div class="step-line"></div>
                 </div>
-                <div class="footer-links">
-                    <h4>Kategorien</h4>
-                    <ul>
-                        <li><a href="#systeme">Smart Speaker</a></li>
-                        <li><a href="#beleuchtung">Beleuchtung</a></li>
-                        <li><a href="#sicherheit">Sicherheit</a></li>
-                        <li><a href="#steuerung">Steuerung</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h4>Rechtliches</h4>
-                    <ul>
-                        <li><a href="#impressum">Impressum</a></li>
-                        <li><a href="#datenschutz">Datenschutz</a></li>
-                        <li><a href="#affiliate">Affiliate-Disclaimer</a></li>
-                    </ul>
+                <div class="step-content">
+                    <h3>Starte mit einem Speaker</h3>
+                    <p>Der Amazon Echo oder Google Nest ist der beste Einstieg. Beide unterstützen Tausende Geräte.</p>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>© 2025 SmartHome Guide. Diese Seite enthält Affiliate-Links. <a href="#affiliate">Mehr erfahren</a></p>
+            <div class="step-item">
+                <div class="step-number">
+                    <span>02</span>
+                    <div class="step-line"></div>
+                </div>
+                <div class="step-content">
+                    <h3>Wähle dein Ökosystem</h3>
+                    <p>Alexa bietet die größte Auswahl, Google die beste KI, HomeKit die beste Privatsphäre.</p>
+                </div>
             </div>
+            <div class="step-item">
+                <div class="step-number">
+                    <span>03</span>
+                    <div class="step-line"></div>
+                </div>
+                <div class="step-content">
+                    <h3>Erste Automation</h3>
+                    <p>Smarte Steckdosen für Lampen, dann Thermostate, schließlich Sensoren und Kameras.</p>
+                </div>
+            </div>
+            <div class="step-item">
+                <div class="step-number">
+                    <span>04</span>
+                </div>
+                <div class="step-content">
+                    <h3>Spare Energie</h3>
+                    <p>Smarte Thermostate und Steckdosen sparen bis zu 30% Energiekosten.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Affiliate Widget -->
+    <section class="section-premium">
+        <div class="widget-section-premium full-width">
+            <div class="widget-header">
+                <div class="widget-icon">🛒</div>
+                <h3>Aktuelle Empfehlungen</h3>
+                <p>Die besten Angebote – automatisch aktualisiert</p>
+            </div>
+            <div class="amazon-widget-container" data-tag="jpe-allgemein-21"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-premium">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="/" class="logo">
+                    <span class="logo-icon">◉</span>
+                    <span class="logo-text">SmartHome<span class="logo-accent">Guide</span></span>
+                </a>
+                <p>Unabhängige Tests und Premium-Empfehlungen für dein Smart Home. Aktualisiert 2025.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Twitter">𝕏</a>
+                    <a href="#" aria-label="Instagram">📷</a>
+                    <a href="#" aria-label="YouTube">▶</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Kategorien</h4>
+                <ul>
+                    <li><a href="#speaker">Smart Speaker</a></li>
+                    <li><a href="#beleuchtung">Beleuchtung</a></li>
+                    <li><a href="#sicherheit">Sicherheit</a></li>
+                    <li><a href="#heizung">Heizung</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Rechtliches</h4>
+                <ul>
+                    <li><a href="#impressum">Impressum</a></li>
+                    <li><a href="#datenschutz">Datenschutz</a></li>
+                    <li><a href="#affiliate">Affiliate-Info</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 SmartHome Guide. Diese Seite enthält Affiliate-Links.</p>
         </div>
     </footer>
 
-    <!-- Affiliatematic Script -->
     <script src="https://affiliatematic.com/amazon-widget.iife.js" async></script>
     <script src="script.js"></script>
 </body>
